@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Top 5 Hotels in Brisbane</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+        body {
+            margin: 0;
+            background: #f2f2f2;
+            font-family: Arial, sans-serif;
+        }
+
+        .hotels-page {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 16px 60px;
+            background: #fafafa;
+        }
+
+        /* HERO */
+        .hero {
+            position: relative;
+            background: url('https://images.unsplash.com/photo-1506377247377-2a5b3b417ebb?auto=format&fit=crop&w=1200&q=80') center/cover no-repeat;
+            padding: 70px 20px;
+            border-radius: 12px;
+            text-align: center;
+            color: #fff;
+            margin-bottom: 35px;
+        }
+
+        .hero-overlay {
+            position: absolute;
+            inset: 0;
+            background: rgba(0,0,0,0.45);
+            border-radius: 12px;
+        }
+
+        .hero h1 {
+            position: relative;
+            font-size: 32px;
+            margin-bottom: 10px;
+            z-index: 2;
+        }
+
+        .hero-subtitle {
+            position: relative;
+            font-size: 16px;
+            line-height: 1.5;
+            max-width: 650px;
+            margin: 0 auto;
+            z-index: 2;
+        }
+
+        /* INTRO */
+        .intro {
+            margin-bottom: 30px;
+            font-size: 16px;
+            color: #444;
+            line-height: 1.6;
+        }
+
+        .section-divider {
+            height: 1px;
+            background: #e0e0e0;
+            margin: 30px 0;
+        }
+
+        /* MOBILE HOTEL GRID */
+        .hotel-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 25px;
+        }
+
+        @media (min-width: 600px) {
+            .hotel-grid {
+                grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            }
+        }
+
+        /* HOTEL CARD */
+        .hotel-card {
+            background: #fff;
+            padding: 20px;
+            border-radius: 14px;
+            box-shadow: 0 4px 14px rgba(0,0,0,0.08);
+            border: 1px solid #eee;
+            animation: fadeIn 0.6s ease forwards;
+            opacity: 0;
+        }
+
+        .hotel-img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 12px;
+            margin-bottom: 15px;
+        }
+
+        .hotel-card h3 {
+            margin: 0 0 10px;
+            font-size: 20px;
+        }
+
+        .hotel-card p {
+            color: #555;
+            line-height: 1.6;
+            margin-bottom: 18px;
+            font-size: 15px;
+        }
+
+        /* CTA BUTTON */
+        .cta-btn {
+            display: block;
+            width: 100%;
+            text-align: center;
+            padding: 5px;
+            background: #0d47a1;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+            font-size: 16px;
+            transition: background 0.2s;
+        }
+
+        .cta-btn:hover {
+            background: #08306b;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* FOOTER */
+        .footer {
+            text-align: center;
+            padding: 40px 0;
+            color: #808080;
+            font-size: 14px;
+        }
+ </style>
+</head>
+
+<body>
+<div class="hotels-page">
+
+    <!-- HERO -->
+    <section class="hero">
+        <div class="hero-overlay"></div>
+        <h1>Top 5 Hotels in Brisbane</h1>
+        <p class="hero-subtitle">
+            Luxury stays, riverfront views, boutique hotels and modern escapes — discover Brisbane's best accommodation options.
+        </p>
+    </section>
+
+    <!-- INTRO -->
+    <section class="intro">
+        <p>
+            Whether you're visiting Brisbane for a weekend getaway or a luxury escape, these top-rated hotels offer the best
+            locations, amenities, and comfort. Compare the top 5 stays and book with guaranteed best rates.
+        </p>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- HOTEL GRID -->
+    <section class="hotel-grid">
+
+        <div class="hotel-card">
+            <img src="images/Hotels/CalileHotel.webp" alt="The Calile Hotel Brisbane" class="hotel-img">
+            <h3>The Calile Hotel</h3>
+            <p>Minimalist luxury, rooftop pool, and James Street dining — Brisbane's most iconic boutique stay.</p>
+            <a href="https://www.booking.com/hotel/au/the-calile.en-gb.html?aid=7864353" class="cta-btn" target="_blank">Check availability</a>
+        </div>
+
+        <div class="hotel-card">
+            <img src="images/Hotels/WBrisbane.webp" alt="W Brisbane Hotel" class="hotel-img">
+            <h3>W Brisbane</h3>
+            <p>Bold design, river views, world-class spa, and one of Brisbane's best hotel breakfasts.</p>
+            <a href="https://www.booking.com/hotel/au/w-brisbane.en-gb.html?aid=7864353" class="cta-btn" target="_blank">Check availability</a>
+        </div>
+
+        <div class="hotel-card">
+            <img src="images/Hotels/TheWestinentrance.webp" alt="The Westin Brisbane" class="hotel-img">
+            <h3>The Westin Brisbane</h3>
+            <p>Wellness-focused luxury with a swim-up bar and prime CBD location.</p>
+            <a href="https://www.booking.com/hotel/au/the-westin-brisbane.en-gb.html?aid=7864353" class="cta-btn" target="_blank">Check availability</a>
+        </div>
+
+        <div class="hotel-card">
+            <img src="images/Hotels/EmporiumHotelSouthbankpool.webp" alt="Emporium Hotel South Bank" class="hotel-img">
+            <h3>Emporium Hotel South Bank</h3>
+            <p>Rooftop infinity pool, glamorous interiors, and stunning river views — perfect for couples.</p>
+            <a href="https://www.booking.com/hotel/au/emporium-south-bank.en-gb.html?aid=7864353" class="cta-btn" target="_blank">Check availability</a>
+        </div>
+
+        <div class="hotel-card">
+            <img src="images/Hotels/CrystalbrookVincentHotelentrance.webp" alt="Crystalbrook Vincent Brisbane" class="hotel-img">
+            <h3>Crystalbrook Vincent</h3>
+            <p>Art-driven, modern, and located under the Story Bridge — ideal for nightlife and riverfront stays.</p>
+            <a href="https://www.booking.com/hotel/au/crystalbrook-vincent.en-gb.html?aid=7864353" class="cta-btn" target="_blank">Check availability</a>
+        </div>
+
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- FOOTER -->
+    <div class="footer">
+        © 2026 Brisbane Activity Guide
+    </div>
+
+</body>
+</html>
